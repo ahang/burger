@@ -5,6 +5,6 @@ CREATE TABLE burgers (
     id INTEGER(11) AUTO_INCREMENT NOT NULL,
     burger_name VARCHAR(100) NULL,
     devoured BOOL DEFAULT false,
-    orderDate DATE,
+    orderDate datetime NOT NULL DEFAULT NOW(),
     PRIMARY KEY (id)
 );
