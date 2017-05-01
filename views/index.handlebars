@@ -1,5 +1,7 @@
 <h1>Welcome to Good Burger. Home of the Good Burger.</h1>
 
-{{#each bugers}}
-    {{this.burger_name}}
+{{#each burgers}}
+	{{#unless this.devoured}}
+    <p>{{this.burger_name}}</p>
+    {{/unless}}
 {{/each}}
