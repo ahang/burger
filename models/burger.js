@@ -1,4 +1,5 @@
 var orm = require("../config/orm.js");
+console.log("Burger Models Operational");
 
 var burger = {
     selectAll: function(callback) {

@@ -1,4 +1,5 @@
 var connection = require("../config/connection.js");
+console.log("ORM Config Operational");
 
 var orm = {
     selectAll: function(tableInput, callback) {
