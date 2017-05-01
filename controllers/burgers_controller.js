@@ -6,7 +6,7 @@ var router = express.Router();
 var burger = require("../models/burger.js");
 
 router.get("/", function(req, res) {
-    burger.selectAll(function(data) {
+    burger.all(function(data) {
         var hbsObject = {
             burgers: data
         };
@@ -17,10 +17,18 @@ router.get("/", function(req, res) {
 
 router.post("/", function(req, res) {
     console.log(req.body);
-    burger.insertOne([
+    burger.newBurger([
         req.body.burger_name
     ], function() {
         res.redirect("/");
+    });
+});
+
+router.put("/", function(req, res) {
+    console.log(req.body);
+    burger.eaten(
+        true, req.body.id, function() {
+            res.redirect("/");
     });
 });
 

@@ -24,9 +24,9 @@ var orm = {
             console.log("Insert One completed");
         });
     },
-    updateOne: function(tableInput, colName, newName, colId, pageId, callback) {
-        var query = "UPDATE ?? SET ?? = ? WHERE ?? = ??"
-        connection.query(query, [tablueInput, colName, newName, colId, pageId], function(err, result) {
+    updateOne: function(tableInput, colName, newInput, colId, pageId, callback) {
+        var query = "UPDATE ?? SET ?? = ? WHERE ?? = ?";
+        connection.query(query, [tableInput, colName, newInput, colId, pageId], function(err, result) {
             if (err) {
                 throw err;
             }
