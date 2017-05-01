@@ -8,8 +8,9 @@ var burger = {
         });
     },
 
-    insertOne: function(colName, vals, callback) {
-        orm.insertOne("burgers", "colName", "vals", function(result) {
+    insertOne: function(vals, callback) {
+        orm.insertOne("burgers", "burger_name", vals, function(result) {
+            console.log("Trying to callback function in models");
             callback(result);
         });
     },
