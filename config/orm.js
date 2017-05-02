@@ -18,10 +18,10 @@ var orm = {
             if (err) {
                 throw err;
             }
-            console.log("The result is.... in ORM" + result);
-            console.log("callingback the result");
+            //console.log("The result is.... in ORM" + result);
+            //console.log("callingback the result");
             callback(result);
-            console.log("Insert One completed");
+            //console.log("Insert One completed");
         });
     },
     updateOne: function(tableInput, colName, newInput, colId, pageId, callback) {

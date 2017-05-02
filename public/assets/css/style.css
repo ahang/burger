@@ -1,5 +1,11 @@
-.uneaten,
-.eaten {
-    text-align: left;
-    background-color: white;
+.header-burger {
+    text-align: center;
+}
+
+.add-burger {
+    text-align: center;
+}
+
+.main-burger {
+    margin-top: 50px;
 }

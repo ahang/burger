@@ -1,26 +1,41 @@
 <div class="container">
     <div class="row">
         <img src="/assets/img/simpson.png" class="img-fluid col-6-md col-md-offset-3" alt="burger image">
-        <div class="col-md-4 col-md-offset-4"><h1>Eat The Burger</h1></div>
+        <div class="col-md-12 header-burger"><h1>All the Burgers</h1></div>
     </div>
     <div class="row">
-        <div class="col-md-6 uneaten">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 uneaten">
             {{#each burgers}}
             	{{#unless this.devoured}}
-                <p class="btn btn-danger">{{this.id}}. {{this.burger_name}}</p>
-                <form action="/{{this.id}}?_method=PUT" method="POST">
-                    <input type="hidden" name="devoured" value="1">
-                    <button type="submit">Devour</button>
-                </form>
+                    <form action="/{{this.id}}?_method=PUT" method="POST">
+                        <p>{{this.id}}. {{this.burger_name}}
+                        <input type="hidden" name="devoured" value="1">
+                        <button type="submit">Devour</button>
+                    </form>
                 {{/unless}}
             {{/each}}
         </div>
-        <div class="col-md-6 eaten">
+        <div class="col-md-4 eaten">
             {{#each burgers}}
                 {{#if this.devoured}}
                     <p>{{this.id}}. {{this.burger_name}}</p>
                 {{/if}}
             {{/each}}
+        </div>
+    </div>
+</div>
+
+<div class="container main-burger">
+    <div class="row">
+        <div class="col-md-12">
+            <form class="create-form add-burger" action="/" method="POST">
+                <div class="form-group">
+                    <label for="burger_name">Burger:</label>
+                    <input type="text" id="burger_name" name="burger">
+                <button type="submit btn-primary">Order a burger</button>
+                <h3>Welcome to Krusty Burger. What would ya like?</h3>
+            </form>
         </div>
     </div>
 </div>

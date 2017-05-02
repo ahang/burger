@@ -16,9 +16,10 @@ router.get("/", function(req, res) {
 });
 
 router.post("/", function(req, res) {
-    console.log(req.body);
+    //console.log(req.params.burger_name);
+    console.log(req.body.burger);
     burger.newBurger([
-        req.body.burger_name
+        req.body.burger
     ], function() {
         res.redirect("/");
     });

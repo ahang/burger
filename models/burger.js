@@ -10,7 +10,7 @@ var burger = {
 
     newBurger: function(vals, callback) {
         orm.insertOne("burgers", "burger_name", vals, function(result) {
-            console.log("Trying to callback function in models");
+            //console.log("Trying to callback function in models");
             callback(result);
         });
     },
