@@ -5,21 +5,21 @@
     </div>
     <div class="row">
         <div class="col-md-4"></div>
-        <div class="col-md-4 uneaten">
+        <div class="col-md-4">
             {{#each burgers}}
             	{{#unless this.devoured}}
                     <form action="/{{this.id}}?_method=PUT" method="POST">
-                        <p>{{this.id}}. {{this.burger_name}}
+                        <p class="uneaten">{{this.id}}. {{this.burger_name}}
                         <input type="hidden" name="devoured" value="1">
-                        <button type="submit">Devour</button>
+                        <button class="btn-primary" type="submit">Devour</button></p>
                     </form>
                 {{/unless}}
             {{/each}}
         </div>
-        <div class="col-md-4 eaten">
+        <div class="col-md-4">
             {{#each burgers}}
                 {{#if this.devoured}}
-                    <p>{{this.id}}. {{this.burger_name}}</p>
+                    <p class="eaten">{{this.id}}. {{this.burger_name}}</p>
                 {{/if}}
             {{/each}}
         </div>
@@ -32,7 +32,7 @@
             <form class="create-form add-burger" action="/" method="POST">
                 <div class="form-group">
                     <label for="burger_name">Burger:</label>
-                    <input type="text" id="burger_name" name="burger">
+                    <input type="text" id="burger_name" name="burger" placeholder="Burger Name">
                 <button type="submit btn-primary">Order a burger</button>
                 <h3>Welcome to Krusty Burger. What would ya like?</h3>
             </form>

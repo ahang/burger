@@ -1,3 +1,21 @@
+body {
+	background-color: orange;
+	font-size: 15px;
+}
+
+.eaten {
+	background-color: grey;
+	border: 2px solid black;
+	padding: 5px;
+}
+
+.uneaten {
+	background-color: white;
+	border: 2px solid black;
+	padding: 5px;
+	text-align: left;
+}
+
 .header-burger {
     text-align: center;
 }
@@ -8,4 +26,5 @@
 
 .main-burger {
     margin-top: 50px;
+    padding-bottom: 10px;
 }
