@@ -29,7 +29,7 @@ router.put("/:id", function(req, res) {
     console.log("The ID " + req.params.id);
     console.log("Value of Devoured " + req.body.devoured);
     burger.eaten(
-        req.body.devoured, req.params.id.id, function() {
+        req.body.devoured, req.params.id, function() {
             res.redirect("/");
     });
 });

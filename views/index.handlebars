@@ -9,7 +9,7 @@
             	{{#unless this.devoured}}
                 <p class="btn btn-danger">{{this.id}}. {{this.burger_name}}</p>
                 <form action="/{{this.id}}?_method=PUT" method="POST">
-                    <input type="hidden" name="devoured" value="true">
+                    <input type="hidden" name="devoured" value="1">
                     <button type="submit">Devour</button>
                 </form>
                 {{/unless}}
