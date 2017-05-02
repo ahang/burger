@@ -7,7 +7,7 @@
         <div class="col-md-6 uneaten">
             {{#each burgers}}
             	{{#unless this.devoured}}
-                <p>{{this.id}}. {{this.burger_name}}</p>
+                <p class="btn btn-danger">{{this.id}}. {{this.burger_name}}</p>
                 {{/unless}}
             {{/each}}
         </div>
