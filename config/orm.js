@@ -31,7 +31,7 @@ var orm = {
                 throw err;
             }
             callback(result);
-            console.log("Successfully modified name");
+            console.log("Successfully modified updated");
         });
     }
 };
