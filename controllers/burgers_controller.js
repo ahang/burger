@@ -24,10 +24,12 @@ router.post("/", function(req, res) {
     });
 });
 
-router.put("/", function(req, res) {
+router.put("/:id", function(req, res) {
     console.log(req.body);
+    console.log("The ID " + req.params.id);
+    console.log("Value of Devoured " + req.body.devoured);
     burger.eaten(
-        true, req.body.id, function() {
+        req.body.devoured, req.params.id.id, function() {
             res.redirect("/");
     });
 });
