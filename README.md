@@ -12,6 +12,7 @@ Setup and Running the App
 3. Type in `npm-install`
 4. Open up the folder in your favorite text editor. Or for sublime users type in `subl .`
 5. Use `schema.sql` to create the necessary database and tables. Use `seeds.sql` to input data into the table.
+7. Navigate to `connection.js` contained within the `config` folder and update the password field with your MySQL password.
 6. Go back to `Git` and type in `node server.js`
 7. Open up your browser in type in `localhost:3000/`
 8. Enjoy!
