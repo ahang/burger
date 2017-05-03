@@ -1,7 +1,7 @@
 # burger
 
 # About
-Created a bugger logger with MySQL, Node, Express, Handlebars and custom ORM. Followed MVC design pattern using Node & MySQL to query and route the data, and Handlebars to generate HTML
+Created a burger logger with MySQL, Node, Express, Handlebars and custom ORM. Followed MVC design pattern using Node & MySQL to query and route the data, and Handlebars to generate HTML
 
 ### How to use
 
