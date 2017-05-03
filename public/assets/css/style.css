@@ -4,9 +4,10 @@ body {
 }
 
 .eaten {
-	background-color: grey;
-	border: 2px solid black;
+	background-color: white;
+	border: 2px solid grey;
 	padding: 5px;
+    opacity: 0.8;
 }
 
 .uneaten {
@@ -27,4 +28,9 @@ body {
 .main-burger {
     margin-top: 50px;
     padding-bottom: 10px;
+}
+
+.welcome-text {
+    font-size: 40px;
+    font-family: 'Gloria Hallelujah', cursive;
 }
