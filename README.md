@@ -15,3 +15,10 @@ Setup and Running the App
 6. Go back to `Git` and type in `node server.js`
 7. Open up your browser in type in `localhost:3000/`
 8. Enjoy!
+
+### App Functionality
+
+1. It's a resturant app that allows users to input the names of burgers they'd like to eat
+2. Whenever a user submits a burger's name, the app will display the burger on the left side of the page - waiting to be eaten.
+3. Each burger in the waiting area has a `Devour It!` button. When the user clicks on it, the burger will move to the right side of the page.
+4. The App will store every burger in a database, whether devoured or not.
