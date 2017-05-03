@@ -4,8 +4,10 @@
 Created a burger logger with MySQL, Node, Express, Handlebars and custom ORM. Followed MVC design pattern using Node & MySQL to query and route the data, and Handlebars to generate HTML
 
 ### How to use
+Viewing it Online
+1. Access the link [here](http://goodburgers.herokuapp.com/)
 
-Setup and Running the App
+Setup and Running the App Locally 
 
 1. Clone Repo and extract to accessible location
 2. Navigate in `Git` to root of the folder of `burger`
